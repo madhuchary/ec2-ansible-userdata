@@ -4,11 +4,11 @@
   vars:
    pkg: apache2
 
-  - name: installing {{ pkg }}
+  - name: installing "{{ pkg }}"
     package:
-     name: {{ pkg }}
+     name: "{{ pkg }}"
      state: latest
-  - name: Restarting {{ pkg }}
+  - name: Restarting "{{ pkg }}"
     service:
-     name: {{ pkg }}
+     name: "{{ pkg }}"
      state: restarted
