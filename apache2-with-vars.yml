@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  tasks: 
+  vars:
+   pkg: apache2
+
+  - name: installing {{ pkg }}
+    package:
+     name: {{ pkg }}
+     state: latest
+  - name: Restarting {{ pkg }}
+    service:
+     name: {{ pkg }}
+     state: restarted
