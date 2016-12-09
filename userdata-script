@@ -1,6 +1,7 @@
 #!/bin/bash
 sudo apt-get update
 sudo apt-get install git -y
+sleep 10
 sudo git clone https://github.com/madhuchary/ec2-ansible-userdata.git
 sudo cd ec2-ansible-userdata
 sudo bash ubuntu.sh
