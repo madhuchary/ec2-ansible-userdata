@@ -1,8 +1,8 @@
 ---
 - hosts: localhost
-  tasks: 
   vars:
    pkg: apache2
+  tasks: 
 
   - name: installing "{{ pkg }}"
     package:
